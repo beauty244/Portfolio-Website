@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Beauty Rani - B.Sc. IT Student and Aspiring Software Developer. Faridabad, India. Portfolio and resume.">
+  <meta name="theme-color" content="#1a1a2e">
+  <title>Beauty Rani | B.Sc. IT Student | Aspiring Software Developer</title>
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Loading overlay -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader__spinner"></div>
+    <span class="loader__text">Loading...</span>
+  </div>
+
+  <!-- Skip link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar" role="banner">
+    <nav class="navbar__inner" aria-label="Main navigation">
+      <a href="#hero" class="navbar__brand" aria-label="Home">Beauty Rani</a>
+      <button class="navbar__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+      </button>
+      <ul class="navbar__menu" id="nav-menu" role="menubar">
+        <li role="none"><a href="#hero" class="navbar__link active" role="menuitem">Home</a></li>
+        <li role="none"><a href="#profile" class="navbar__link" role="menuitem">Profile</a></li>
+        <li role="none"><a href="#education" class="navbar__link" role="menuitem">Education</a></li>
+        <li role="none"><a href="#skills" class="navbar__link" role="menuitem">Skills</a></li>
+        <li role="none"><a href="#certifications" class="navbar__link" role="menuitem">Certifications</a></li>
+        <li role="none"><a href="#languages" class="navbar__link" role="menuitem">Languages</a></li>
+        <li role="none"><a href="#contact" class="navbar__link" role="menuitem">Contact</a></li>
+        <li role="none">
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+            <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀️</span>
+            <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">🌙</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="hero__bg-gradient" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="hero__greeting">Hi, I'm</p>
+        <h1 class="hero__name" id="hero-heading">Beauty Rani</h1>
+        <p class="hero__title">B.Sc. IT Student | Aspiring Software Developer</p>
+        <p class="hero__location">Faridabad, Haryana, India</p>
+        <div class="hero__tagline-wrapper">
+          <span class="hero__tagline" id="typing-text" aria-live="polite"></span>
+          <span class="hero__cursor" aria-hidden="true">|</span>
+        </div>
+        <div class="hero__cta">
+          <a href="#contact" class="btn btn--primary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- ========== PROFILE SECTION ========== -->
+    <section class="profile section" id="profile" aria-labelledby="profile-heading">
+      <div class="container">
+        <h2 class="section__title" id="profile-heading">Profile</h2>
+        <div class="profile__card reveal">
+          <div class="profile__image-wrapper">
+            <img
+              src="images/profile.png"
+              alt="Beauty Rani profile photo"
+              class="profile__image"
+              loading="lazy"
+              width="400"
+              height="400"
+            >
+          </div>
+          <div class="profile__content">
+            <p class="profile__summary">
+              Motivated IT student seeking internship opportunities to gain hands-on industry experience. Passionate about software development and modern technologies, with strong willingness to learn and adapt. Actively enhancing skills through workshops, practical training, self-study, and real-world learning.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EDUCATION SECTION ========== -->
+    <section class="education section" id="education" aria-labelledby="education-heading">
+      <div class="container">
+        <h2 class="section__title" id="education-heading">Education</h2>
+        <div class="timeline">
+          <article class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">Currently in 2nd year</span>
+              <h3 class="timeline__title">B.Sc. Information Technology</h3>
+              <p class="timeline__company">Manav Rachna International Institute of Research and Studies</p>
+              <p class="timeline__sub">Focus Areas</p>
+              <ul class="timeline__list" role="list">
+                <li>Programming fundamentals</li>
+                <li>SQL & DBMS</li>
+                <li>Web development</li>
+                <li>Cyber security basics</li>
+                <li>Data analytics</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION (Categorized cards) ========== -->
+    <section class="skills-section section" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 class="section__title" id="skills-heading">Skills</h2>
+        <div class="skill-cards">
+          <article class="skill-card reveal">
+            <h3 class="skill-card__title">Programming Languages</h3>
+            <ul class="skill-card__tags" role="list">
+              <li>Python</li>
+              <li>Java</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3 class="skill-card__title">Web Technologies</h3>
+            <ul class="skill-card__tags" role="list">
+              <li>HTML</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3 class="skill-card__title">Tools</h3>
+            <ul class="skill-card__tags" role="list">
+              <li>Visual Studio Code</li>
+              <li>Command line basics</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3 class="skill-card__title">Other Skills</h3>
+            <ul class="skill-card__tags" role="list">
+              <li>Content writing</li>
+              <li>Marketing</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CERTIFICATIONS / EXPERIENCE SECTION ========== -->
+    <section class="certifications section" id="certifications" aria-labelledby="certifications-heading">
+      <div class="container">
+        <h2 class="section__title" id="certifications-heading">Certifications & Experience</h2>
+        <div class="cert-grid">
+          <article class="cert-card reveal">Content Writing & Marketing Internship</article>
+          <article class="cert-card reveal">Graphic Design Workshop</article>
+          <article class="cert-card reveal">Cyberverse Event Participant</article>
+          <article class="cert-card reveal">Cyber Security Analyst Simulation</article>
+          <article class="cert-card reveal">Excel Essentials (Microsoft 365)</article>
+          <article class="cert-card reveal">SQL for Data Analysis</article>
+          <article class="cert-card reveal">Full Stack Development Training</article>
+          <article class="cert-card reveal">Solutions Architecture Simulation</article>
+          <article class="cert-card reveal">GenAI Data Analytics Simulation</article>
+          <article class="cert-card reveal">Programming Foundations</article>
+          <article class="cert-card reveal">Student Welfare Volunteer</article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== LANGUAGES SECTION ========== -->
+    <section class="languages section" id="languages" aria-labelledby="languages-heading">
+      <div class="container">
+        <h2 class="section__title" id="languages-heading">Languages</h2>
+        <div class="language-badges reveal">
+          <span class="language-badge">English</span>
+          <span class="language-badge">Hindi</span>
+          <span class="language-badge">Bangla</span>
+          <span class="language-badge">French</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="contact section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 class="section__title" id="contact-heading">Get In Touch</h2>
+        <div class="contact__grid">
+          <form class="contact__form reveal" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name">
+              <span class="form-error" id="name-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="your@email.com">
+              <span class="form-error" id="email-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required rows="5" placeholder="Your message..."></textarea>
+              <span class="form-error" id="message-error" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          </form>
+          <div class="contact__info reveal">
+            <p class="contact__social-title">Contact details</p>
+            <ul class="contact__details" role="list">
+              <li><a href="mailto:royb17519@gmail.com" aria-label="Email">royb17519@gmail.com</a></li>
+              <li><a href="tel:+919217011636" aria-label="Phone">9217011636</a></li>
+              <li><a href="https://www.linkedin.com/in/beauty-roy-9ab605377" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a></li>
+              <li><a href="https://github.com/beauty244" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <p class="footer__copyright">&copy; <span id="year"></span> Beauty Rani. All rights reserved.</p>
+      <ul class="footer__social" role="list">
+        <li><a href="https://github.com/beauty244" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/beauty-roy-9ab605377" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a></li>
+        <li><a href="mailto:royb17519@gmail.com" aria-label="Email">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
